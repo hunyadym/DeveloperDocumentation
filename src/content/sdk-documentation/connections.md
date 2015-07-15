@@ -46,9 +46,9 @@ RKRobotDiscoveryAgent.sharedAgent().addNotificationObserver(self, selector: "han
 ```
 
 ```java
-DualStackDiscoveryAgent.getInstance().addRobotStateListenernew( RobotChangedStateListener() {
+DualStackDiscoveryAgent.getInstance().addRobotStateListener(new RobotChangedStateListener() {
     @Override
-    public void handleRobotChangedState( Robot robot, RobotChangedStateNotificationType type ) {
+    public void changedState( Robot robot, RobotChangedStateNotificationType type ) {
 
     }
 });
